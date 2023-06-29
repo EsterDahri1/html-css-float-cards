@@ -7,3 +7,19 @@
 html {
     font-family: 'Fredoka', sans-serif;
 }
+
+.container {
+    max-width: 1170px;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    color: deeppink;
+    text-align: center;
+    margin: 15px 0;
+}
+
+p {
+    text-align: center;
+}
