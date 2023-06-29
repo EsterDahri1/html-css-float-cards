@@ -44,12 +44,12 @@ p {
 
 .col{
     background-color: black;
+    border-width: 1rem;
 }
 
 .info {
-    float:right;
-    width: calc(90%/3);
-    margin-right: calc(10%/3);
+    display: inline-block;
+    width:calc(100%/3);
     padding: 0 1rem;
     color: white;
 }
