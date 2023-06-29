@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-.clearfix {
-
-}
-
 html {
     font-family: 'Fredoka', sans-serif;
 }
@@ -16,6 +12,11 @@ html {
     max-width: 1170px;
     width: 80%;
     margin: auto;
+}
+
+.cards {
+    margin:auto;
+    padding: 50px 0;
 }
 
 h1 {
@@ -28,7 +29,32 @@ p {
     text-align: center;
 }
 
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .row .col{
+    float:left;
+    width: calc(90%/3);
+    margin-right: calc(10%/3);
+    padding: 0 1rem;
+}
+
+.col{
+    background-color: black;
+}
+
+.info {
+    float:right;
+    width: calc(90%/3);
+    margin-right: calc(10%/3);
+    padding: 0 1rem;
+    color: white;
+}
+
+.subcol{
     float:left;
     width: calc(100%/3);
     padding: 0 1rem;
@@ -36,4 +62,12 @@ p {
 
 img {
     width: 100px;
+}
+
+a:hover {
+    color:green
+}
+
+a{
+    text-decoration: none;
 }
