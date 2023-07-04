@@ -8,21 +8,32 @@ html {
     font-family: 'Fredoka', sans-serif;
 }
 
+:root{
+    --float-white:#fffeff;
+    --float-dark:#0f0f16;
+    --float-h1:#e53170;
+    --float-info:#fbfdfa;
+    --float-mail:#63b8db;
+}
+
 .container {
-    max-width: 1170px;
-    width: 80%;
-    margin: auto;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+header{
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    color: var(--float-h1);
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .cards {
     margin:auto;
     padding: 50px 0;
-}
-
-h1 {
-    color: deeppink;
-    text-align: center;
-    margin: 15px 0;
 }
 
 p {
@@ -51,7 +62,7 @@ p {
     display: inline-block;
     width:calc(100%/3);
     padding: 0 1rem;
-    color: white;
+    color: var(--float-info);
 }
 
 .subcol{
@@ -65,9 +76,11 @@ img {
 }
 
 a:hover {
-    color:green
+    color:green;
+    text-decoration: underline;
 }
 
 a{
     text-decoration: none;
+    color: var(--float-mail);
 }
