@@ -28,7 +28,11 @@ header{
 header h1 {
     color: var(--float-h1);
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+}
+
+header p {
+    margin-bottom: 2rem;
 }
 
 .cards {
