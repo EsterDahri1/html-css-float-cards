@@ -35,11 +35,6 @@ header p {
     margin-bottom: 2rem;
 }
 
-.cards {
-    margin:auto;
-    padding: 50px 0;
-}
-
 p {
     text-align: center;
 }
@@ -50,17 +45,17 @@ p {
     clear: both;
 }
 
-.row .col{
-    float:left;
-    width: calc(90%/3);
-    margin-right: calc(10%/3);
-    padding: 0 1rem;
+.col{
+    width: calc(100%/3);
+    padding: 0 1.5rem 0 0;
+    float: left;
 }
 
-.col{
-    background-color: black;
-    border-width: 1rem;
+.box{
+    background-color: var(--float-dark);
+    box-shadow: rgba(0, 0, 0, 0.503);
 }
+
 
 .info {
     display: inline-block;
