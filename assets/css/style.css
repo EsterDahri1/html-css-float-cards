@@ -16,9 +16,18 @@ html {
     --float-mail:#63b8db;
 }
 
+.pt-5{
+    padding-top: 5px;
+}
+
+.pb-5{
+    padding-bottom: 5px;
+}
+
 .container {
-    max-width: 920px;
+    max-width: 1170px;
     margin: 0 auto;
+    width: 80%;
 }
 
 header{
@@ -39,47 +48,63 @@ p {
     text-align: center;
 }
 
-.clearfix{
+
+
+.clearfix::after{
     content: '';
     display: table;
     clear: both;
 }
 
+.card{
+    box-shadow: 0 0 5px var(--float-dark);
+    height: 100px;
+}
+
 .col{
-    width: calc(100%/3);
-    padding: 0 1.5rem 0 0;
+    width: calc(100%/12*4);
     float: left;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
 }
-
-.box{
-    background-color: var(--float-dark);
-    box-shadow: rgba(0, 0, 0, 0.503);
-}
-
 
 .info {
-    display: inline-block;
-    width:calc(100%/3);
-    padding: 0 1rem;
-    color: var(--float-info);
+    width: calc(100% - 100px);
+    background-color: var(--float-dark);
+    color: var(--float-white);
+    float: right;
+    padding: 1rem;
+    height:100px;
 }
 
-.subcol{
-    float:left;
-    width: calc(100%/3);
-    padding: 0 1rem;
+.avatar{
+    background-color: var(--float-dark);
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+
+.info h3{
+    
+    padding-bottom: 5px;
+}
+
+.job{
+    
+    padding-bottom: 5px;
 }
 
 img {
     width: 100px;
 }
 
-a:hover {
+.info a:hover {
     color:green;
     text-decoration: underline;
 }
 
-a{
+.info a{
     text-decoration: none;
     color: var(--float-mail);
+   
 }
